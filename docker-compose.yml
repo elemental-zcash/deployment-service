@@ -1,0 +1,15 @@
+version: '3'
+services:
+  # webhook:
+  #   image: almir/webhook
+  #   container_name: webhook
+  #   command: -verbose -hooks=/config/hooks.json -hotreload -secure -cert /var/certs/cert.pem -key /var/certs/key.pem
+  #   environment:
+  #     - TZ=UTC
+  #   volumes:
+  #     - ./config:/config:ro
+  #     - ./scripts:/var/scripts:ro
+  #     - ./certs:/var/certs:ro
+  #   ports:
+  #     - 9000:9000
+  #   restart: always

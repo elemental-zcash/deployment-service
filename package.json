@@ -1,0 +1,22 @@
+{
+  "name": "deployment-service",
+  "version": "0.0.1",
+  "description": "Automatic deployment service",
+  "main": "index.js",
+  "scripts": {
+    "start": "tmux new-session -d -s webhook_autodeploy 'webhook -verbose -hooks=config/hooks.json -hotreload -secure -cert certs/cert.pem -key certs/key.pem'",
+    "stop": "tmux kill-session -t webhook_autodeploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elemental-zcash/deployment-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elemental-zcash/deployment-service/issues"
+  },
+  "homepage": "https://github.com/elemental-zcash/deployment-service#readme"
+}
