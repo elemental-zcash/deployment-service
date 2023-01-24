@@ -1,5 +1,5 @@
 # deployment-service
-Automatic deployment service
+Automatic deployment service.
 
 ## Installation
 
